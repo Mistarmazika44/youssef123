@@ -3,9 +3,9 @@ import telebot,time
 from telebot import types
 from gatet import Tele
 import os
-token = '6877735023:AAHstyaYhx3IAxXBTEGRYbwFi6_HE'
+token = '6934288216:AAHd329OTFV_99KsYxQM6G3A3sOcwRVn5xo'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-subscriber ='642366420'
+subscriber ='6649298332'
 @bot.message_handler(commands=["start"])
 def start(message):
 	if not str(message.chat.id) == subscriber:
@@ -50,7 +50,7 @@ def main(message):
 						os.remove('stop.stop')
 						return
 				try:
-					data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
+					data = requests.get('https://lookup.binlist.net/'+cc[:6934288216:AAHd329OTFV_99KsYxQM6G3A3sOcwRVn5xo]).json()
 					
 				except:
 					pass
@@ -91,8 +91,8 @@ def main(message):
 				elif 'Duplicate' in last:
 					last='Approved'
 				mes = types.InlineKeyboardMarkup(row_width=1)
-				cm1 = types.InlineKeyboardButton(f"• {cc} •", callback_data='u8')
-				status = types.InlineKeyboardButton(f"• 𝗦𝗧𝗔𝗧𝗨𝗦 ➜ {last} •", callback_data='u8')
+				cm1 = types.InlineKeyboardButton(f"• {cc} •", callback_data='u6649298332')
+				status = types.InlineKeyboardButton(f"• 𝗦𝗧𝗔𝗧𝗨𝗦 ➜ {last} •", callback_data='u6649298332')
 				cm3 = types.InlineKeyboardButton(f"• 𝗔𝗣𝗣𝗥𝗢𝗩𝗘𝗗 ✅ ➜ [ {live} ] •", callback_data='x')
 				cm4 = types.InlineKeyboardButton(f"• 𝗗𝗘𝗖𝗟𝗜𝗡𝗘𝗗 ❌ ➜ [ {dd} ] •", callback_data='x')
 				cm5 = types.InlineKeyboardButton(f"• 𝗧𝗢𝗧𝗔𝗟 👻 ➜ [ {total} ] •", callback_data='x')
