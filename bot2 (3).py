@@ -3,20 +3,20 @@ import telebot,time
 from telebot import types
 from gatet import Tele
 import os
-token = '6877735023:AAHstyaYhx3IAxXBTEGRYbwFi6_HE'
+token = '6934288216:AAHd329OTFV_99KsYxQM6G3A3sOcwRVn5xo'
 bot=telebot.TeleBot(token,parse_mode="HTML")
-subscriber ='642366420'
+subscriber ='6649298332'
 @bot.message_handler(commands=["start"])
 def start(message):
 	if not str(message.chat.id) == subscriber:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ JOIN ✨", url="https://t.me/SUPBOT5")
+		contact_button = types.InlineKeyboardButton(text="✨ JOIN ✨", url="https://t.me/Mohamed891846")
 		keyboard.add(contact_button)
 	
 		bot.send_message(chat_id=message.chat.id, text='''Sorry, you do not have a subscription to this bot. You can join the updates channel through the button below the message ''',reply_markup=keyboard)
 		return
 	keyboard = types.InlineKeyboardMarkup()
-	contact_button = types.InlineKeyboardButton(text="✨ JOIN ✨", url="https://t.me/SUPBOT5")
+	contact_button = types.InlineKeyboardButton(text="✨ JOIN ✨", url="https://t.me/Mohamed891846")
 	keyboard.add(contact_button)
 	
 	bot.send_message(chat_id=message.chat.id, text='''Send the file you want to check
@@ -26,7 +26,7 @@ Join the bot's updates channel now through the button below 💸 ''',reply_marku
 def main(message):
 	if not str(message.chat.id) == subscriber:
 		keyboard = types.InlineKeyboardMarkup()
-		contact_button = types.InlineKeyboardButton(text="✨ JOIN ✨", url="https://t.me/SUPBOT5")
+		contact_button = types.InlineKeyboardButton(text="✨ JOIN ✨", url="https://t.me/Mohamed891846")
 		keyboard.add(contact_button)
 	
 		bot.send_message(chat_id=message.chat.id, text='''Sorry, you do not have a subscription to this bot. You can join the updates channel through the button below the message ''',reply_markup=keyboard)
@@ -46,11 +46,11 @@ def main(message):
 				current_dir = os.getcwd()
 				for filename in os.listdir(current_dir):
 					if filename.endswith(".stop"):
-						bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @MNOW4')
+						bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='𝗦𝗧𝗢𝗣𝗣𝗘𝗗 ✅\n𝗕𝗢𝗧 𝗕𝗬 ➜ @Mistar_mazika18')
 						os.remove('stop.stop')
 						return
 				try:
-					data = requests.get('https://lookup.binlist.net/'+cc[:6]).json()
+					data = requests.get('https://lookup.binlist.net/'+cc[:6934288216:AAHd329OTFV_99KsYxQM6G3A3sOcwRVn5xo]).json()
 					
 				except:
 					pass
@@ -91,12 +91,12 @@ def main(message):
 				elif 'Duplicate' in last:
 					last='Approved'
 				mes = types.InlineKeyboardMarkup(row_width=1)
-				cm1 = types.InlineKeyboardButton(f"• {cc} •", callback_data='u8')
-				status = types.InlineKeyboardButton(f"• 𝗦𝗧𝗔𝗧𝗨𝗦 ➜ {last} •", callback_data='u8')
+				cm1 = types.InlineKeyboardButton(f"• {cc} •", callback_data='u6649298332')
+				status = types.InlineKeyboardButton(f"• 𝗦𝗧𝗔𝗧𝗨𝗦 ➜ {last} •", callback_data='u6649298332')
 				cm3 = types.InlineKeyboardButton(f"• 𝗔𝗣𝗣𝗥𝗢𝗩𝗘𝗗 ✅ ➜ [ {live} ] •", callback_data='x')
 				cm4 = types.InlineKeyboardButton(f"• 𝗗𝗘𝗖𝗟𝗜𝗡𝗘𝗗 ❌ ➜ [ {dd} ] •", callback_data='x')
 				cm5 = types.InlineKeyboardButton(f"• 𝗧𝗢𝗧𝗔𝗟 👻 ➜ [ {total} ] •", callback_data='x')
-				contact_button = types.InlineKeyboardButton(text="👤 Help 👤", url="https://t.me/SUPBOT5")
+				contact_button = types.InlineKeyboardButton(text="👤 Help 👤", url="https://t.me/Mohamed891846")
 				stop=types.InlineKeyboardButton(f"[ 𝐒𝐓𝐎𝐏 ]", callback_data='stop')
 				mes.add(cm1,status, cm3, cm4, cm5, stop,contact_button)
 				bot.edit_message_text(chat_id=message.chat.id, message_id=ko, text='''Wait for processing 
